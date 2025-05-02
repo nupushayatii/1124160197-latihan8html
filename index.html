@@ -7,8 +7,45 @@
 </head>
 <body>
     <frameset cols="30%,70%">
-        <frame src="menu.html" name="menuFrame">
+        <frame src="" name="menuFrame">
         <frame src="konten.html" name="kontenFrame">
       </frameset>
+      <style>
+       
+        body {
+          margin: 0;
+          font-family: 'Times New Roman', Times, serif;
+          display: flex;
+          height: 100vh;
+        }
+        nav {
+          width: 25%;
+          background-color: #eb7c7c;
+          padding: 20px;
+        }
+        iframe {
+          width: 75%;
+          border: none;
+          height: 100vh;
+        }
+        a {
+          display: block;
+          margin: 10px 0;
+          text-decoration: none;
+          color: #0a0404;
+        }
+        a:hover {
+          color: rgb(174, 181, 74);
+        }
+      </style>
+      <nav>
+        <h3>Menu</h3>
+        <a href="konten.html" target="contentFrame">Beranda</a>
+        <a href="profile.html" target="contentFrame">Profil</a>
+        <a href="contact.html" target="contentFrame">Kontak</a>
+      </nav>
+    
+      <iframe name="contentFrame" src="konten.html"></iframe>
+    
 </body>
 </html>
